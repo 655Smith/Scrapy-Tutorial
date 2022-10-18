@@ -1,10 +1,10 @@
 import gspread
 
-service_account = gspread.service_account(filename="crawlertutorial/credentials.json")
+service_account = gspread.service_account(filename="credentials.json")
 sheet = service_account.open("Schneiders List")
 worksheet = sheet.worksheet("List Data")
 
-csvFilePath = "crawlertutorial/test.csv"  # Please set your CSV file path.
+csvFilePath = "test.csv"  # Please set your CSV file path.
 spreadsheet_id = sheet.id  # Please set your Spreadsheet ID
 sheetId = worksheet.id  # Please set your sheet ID.
 spreadsheet = service_account.open_by_key(spreadsheet_id)
