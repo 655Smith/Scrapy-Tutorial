@@ -1,3 +1,4 @@
+enter credentials into credentias.json
 call pipenv install/shell on \Scrapy Tutorial
 cd crawlertutorial
 scrapy crawl cellar -o test.csv
