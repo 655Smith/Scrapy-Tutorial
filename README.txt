@@ -9,5 +9,6 @@ python3 pipe_csv_sheets.py
 cd ../
 exit
 
+#! /usr/bin/bash
 bash pipenv.sh
 bash crawler.sh
