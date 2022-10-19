@@ -8,3 +8,6 @@ python3 csv_cleaner_scrapy.py
 python3 pipe_csv_sheets.py
 cd ../
 exit
+
+bash pipenv.sh
+bash crawler.sh
