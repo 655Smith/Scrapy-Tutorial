@@ -1,16 +1,16 @@
-wine_rows = []
-counter = 0
-def sanitize(input_string):
-    if type(input_string) != str:
-        return None
-    else:
-        return input_string.replace("(","").replace(")","").replace(",","").replace("*","").replace("&","").replace("'","").replace('"',"").replace("%","").replace("$","").replace("#","").replace("@","").replace("!","").replace("?","").strip()
+import os
 
+os.system("cd")
+os.system("cd Scrapy-Tutorial")
+os.system("pipenv install")
+os.system("pipenv shell")
+os.system("cd crawlertutorial")
+os.system("rm test.csv")
+os.system("scrapy crawl cellar -o test.csv")
+os.system("python3 csv_cleaner_scrapy.py")
+os.system("python3 pipe_csv_sheets.py")
+os.system("cd ../")
 
+pipenv_subshell.py
 
-for row in wine_rows:
-    if row.css(f"span#mainContent_gvInventory_lblProduct_{counter}::text").get() == None:
-        continue
-    pass
-    counter +=1
-counter = 0
+scrapy_cmd.py
