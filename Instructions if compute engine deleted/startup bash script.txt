@@ -1,0 +1,15 @@
+file at ./startup.sh
+
+
+---bash script below---
+
+#! /usr/bin/bash
+
+cd
+cd Scrapy-Tutorial
+pipenv install
+cd crawlertutorial
+rm test.csv
+pipenv run python3 scrapy_cmd.py
+pipenv run python3 csv_cleaner_scrapy.py
+pipenv run python3 pipe_csv_sheets.py

@@ -1,0 +1,1 @@
+20 16 * * * sudo -H -u g655smith  bash -c 'bash ./startup.sh'
